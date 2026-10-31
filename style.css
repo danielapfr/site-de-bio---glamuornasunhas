@@ -33,12 +33,12 @@ header h1{
 
 
 .cursos{
-    padding: 22px;
+    padding: 29px;
 }
 
 .cursos h2{
     color: #a74670;
-    font-size: 15px;
+    font-size: 10px;
     font-weight: 300;
     margin-bottom: 20px;
     text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.133);
@@ -76,10 +76,30 @@ header h1{
 
 .curso-card span{
     flex: 1;
-    font-size: 20px;
+    font-size: 15px;
     text-align: center;
     font-weight: 300;
     padding-right: 55px;
     text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.133);
 
 }
+
+.botoes-container{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    width: 80%;
+    flex-direction: column;
+    padding: 30px;
+    max-width: 400px;
+    margin: 20px auto;
+    overflow: hidden;
+    background: transparent;
+
+}
+
+.icones{
+    margin: 20px;
+    font-size: 17px;
+}
+
