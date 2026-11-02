@@ -31,6 +31,26 @@ header h1{
     text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.133);
 }
 
+.perfil{
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0 0 35px 15px rgba(255, 255, 255, 0.247);
+}
+
+.perfil::before{
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background-color: rgba(255, 255, 255, 0.111);
+    border-radius: 50%;
+    filter: blur(25px);
+    opacity: 70%;
+    z-index: -1;
+}
+
 
 .cursos{
     padding: 29px;
@@ -48,27 +68,32 @@ header h1{
 .curso-card{
     display: flex;
     align-items: center;
-    gap: px;
+    gap: 15px;
 
     width: 100%;
-    min-height: 70px;
+    height: 50px;
+    min-height: 55px;
     padding: 6px;
-    gap: 10px;
+    gap: 15px;
 
-    border: 2px solid #a74670;
-    border-radius: 18px;
+    border-radius: 15px;
 
     color: #a74670;
+    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.152);
+    background-color: transparent;
     text-decoration: none;
     box-sizing: border-box;
 
-    margin-bottom:15px;
+    margin-bottom: 15px;
+    transition: background 0.3s ease;
+
 
 }
 
+
 .curso-card img{
-    width: 55px;
-    height: 55px;
+    width: 45px;
+    height: 45px;
     object-fit: cover;
     border-radius: 15px;
     flex-shrink: 0;
@@ -76,7 +101,7 @@ header h1{
 
 .curso-card span{
     flex: 1;
-    font-size: 15px;
+    font-size: 14px;
     text-align: center;
     font-weight: 300;
     padding-right: 55px;
