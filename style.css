@@ -32,10 +32,11 @@ header h1{
 }
 
 .perfil-container{
+    display: flex;
+    justify-content: center;
     position: relative;
     width: 100px;
     height: 100px;
-    padding: 5px;
     margin: auto;
 }
 
@@ -52,6 +53,7 @@ header h1{
 .perfil{
     width: 100%;
     height: 100%;
+    padding: 15px;
     border-radius: 50%;
     object-fit: cover;
     position: relative;
