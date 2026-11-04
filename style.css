@@ -25,40 +25,40 @@ header img{
 }
 
 header h1{
+    text-align: center;
+    margin-top: 75px;
     font-size: 20px;
     font-weight: 300;
     color: #a74670;
     text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.133);
 }
 
-.perfil-container{
-    display: flex;
-    justify-content: center;
+.cabeçalho{
     position: relative;
-    width: 100px;
-    height: 100px;
-    margin: auto;
+    width: 100%;
+    height: 180px;
 }
 
-.perfil-container::before{
-    content: "";
-    position: absolute;
-    inset: -60px;
-    background: url(imagens/blur.png) center / contain no-repeat;
-    filter: blur(30px);
-    z-index: 0;
-    pointer-events: none;
+.capa{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    object-position: center;
 }
 
 .perfil{
-    width: 100%;
-    height: 100%;
-    padding: 15px;
+    position: absolute;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     object-fit: cover;
-    position: relative;
-    z-index: 1;
+
+    left: 50%;
+    bottom: -60px;
+    z-index: 2;
+    transform: translate(-50%);
 }
+
 
 
 .cursos{
@@ -67,7 +67,7 @@ header h1{
 
 .cursos h2{
     color: #a74670;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 300;
     margin-bottom: 20px;
     text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.133);
@@ -96,8 +96,6 @@ header h1{
 
     margin-bottom: 15px;
     transition: background 0.3s ease;
-
-
 }
 
 
